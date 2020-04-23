@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: black;
+            font-size: 144px;
+            font-weight: bold;
+        }
+
+        .marquee {
+            position: relative;
+            width: 100vw;
+            max-width: 100%;
+            height: 200px;
+            overflow-x: hidden;
+            margin-top: 20%;
+        }
+
+        .track {
+            position: absolute;
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee 32s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+
+    <head>
+
+    <body>
+        <div class="marquee">
+            <div class="track">
+                <div class="content">&nbsp;심진욱 프로님 입사 2주년 축하드립니다~~!!</div>
+            </div>
+        </div>
+    </body>
+
+
+</html>
